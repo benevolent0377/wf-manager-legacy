@@ -24,6 +24,7 @@ class FileSystem:
         self.imgPath = f"{self.CWD}{self.slash}source{self.slash}sysimg{self.slash}"
         self.logName = system.getLogInfo()[1]
         self.file = system.getLogInfo()[2]
+        self.apiCachePath = f"{self.CWD}{self.slash}.api-c{self.slash}"
 
     def isOnline(self):
         return system.isOnline()

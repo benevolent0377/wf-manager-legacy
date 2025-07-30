@@ -1,9 +1,12 @@
-from source.lib import filesys, GUI, api
+from source.lib import filesys, GUI, api, cache
 
 
 def run():
 
-    FileSystem = filesys.FileSystem(['config', 'cache', 'tmp', 'log', '.userdata', '.pgmdata'])
+    FileSystem = filesys.FileSystem(['config', 'cache', 'tmp', 'log', '.userdata', '.pgmdata', '.api-c'])
     FileSystem.buildConfig(['local.yaml'], [])
+    cache.init(FileSystem)
 
-    GUI.Main()
+    #GUI.main()
+
+    cache.syncAPI()
