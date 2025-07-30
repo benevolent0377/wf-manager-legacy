@@ -1,5 +1,5 @@
 from source.lib import filesys, GUI, api
-from source.core.system import quitKill
+
 
 def run():
 
