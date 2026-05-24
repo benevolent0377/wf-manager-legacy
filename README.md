@@ -1,4 +1,4 @@
-# Warframe Manager
+# Warframe Manager Legacy (Deprecated)
 
 ### :memo:Version: Alpha 0.1
 
